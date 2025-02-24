@@ -63,6 +63,7 @@ header {
     border-radius: 50px; 
     padding: 10px;
     margin: 30px;
+    height: 80px;
     width: 500px; 
     position: relative;
 }
@@ -95,11 +96,19 @@ header {
 }
 
 /*corpo*/
+.texto-sobre-imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 .paw{
     width: 100vh;
 }
 .container {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
@@ -110,21 +119,18 @@ header {
 h1{
     font-size: 100px;
     height: 100px;
-    white-space: nowrap; 
+    white-space: nowrap;
+    font-size: clamp(40px, 8vw, 100px); 
 }
 p{
     font-size: 50px;
-    margin: 50px;
-    margin-bottom: 3px;
-    display: flex;
-    justify-content: center;
+    margin: 10px;
+    margin-bottom: 5px;
+    font-size: clamp(20px, 4vw, 50px);
     
 }
 p1{
     font-size: 25px;
-    display: flex;
-    justify-content: center;
-
 }
 #cat-container {
     margin: 20px;
@@ -132,12 +138,13 @@ p1{
     text-align: center;
 }
 #cat-container img {
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     height: 700px;
     object-fit: cover; 
     border-radius: 50px; 
     border: 5px solid #9E9E9E;
-    margin-left: 165px; 
+    margin-left: 0; 
     border-color: #fff;
 }
 button {
@@ -149,15 +156,10 @@ button {
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    margin: 10px;
-    margin-right: 100px;
+    margin: 40px;
     transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #4f636d;
 }
-
-    
-
-
